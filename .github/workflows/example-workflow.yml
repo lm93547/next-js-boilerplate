@@ -1,0 +1,22 @@
+name: Example Workflow
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+    workflow_dispatch:
+        branches:
+            - main
+
+jobs:
+    check_setup:
+        runs-on: ubuntu-latest
+        steps:
+            -   name: Checkout.
+                uses: actions/checkout@v2
+
+            -   name: Check for Setup files.
+                run: '(test -f SETUP.md && echo "::warning::SETUP.md is present and should be deleted.") || echo Setup looking good, enjoy developing!'

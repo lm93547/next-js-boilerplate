@@ -1,0 +1,33 @@
+{
+  "name": "next-js-boilerplate",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate": "plop --plopfile internal/generators/index.js",
+    "cypress": "cypress open",
+    "cypress-headless": "cypress run"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "next": "12.0.10",
+    "plop": "^3.0.5",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@types/node": "17.0.15",
+    "@types/react": "17.0.39",
+    "babel-eslint": "^10.1.0",
+    "cypress": "^9.4.1",
+    "eslint": "8.8.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.0.10",
+    "sass": "^1.49.7",
+    "typescript": "4.5.5"
+  }
+}
